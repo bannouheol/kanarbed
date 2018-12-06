@@ -1,4 +1,4 @@
-html, body {
+html {
   overflow-x: hidden;
 }
 
@@ -61,10 +61,16 @@ h2 {
 .footer a {
   color: #fff;
 }
-.product {
+.product-list {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-repeat:   no-repeat;
-  background-position: center center;
+  background: #162b41;
+}
+.product {
+  background:rgba(255,255,255,0.);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.10), 0 3px 3px rgba(0,0,0,0.15);
 }
 .product-cd {
   background-image: url('/img/kan-ar-bed-cd.jpg');
@@ -87,4 +93,12 @@ h2 {
 }
 .product div {
   background: rgba(250,250,250,0.8);
+}
+
+.price {
+  /*background: rgba(22, 43, 65, 0.6);*/
+  background: #cda878;
+  padding: 10px;
+  color: #fff;
+  font-size: 1.5rem;
 }
