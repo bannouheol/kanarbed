@@ -113,10 +113,15 @@ h2 {
 }
 
 .tracklist li {
-  padding: 0.3rem 0.75rem;
-  font-size: 0.7rem;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.85rem;
 }
 
+
+.product-page h1 small {
+  font-size: 1.3rem;
+  text-indent: -2em;
+}
 .product-page h3 {
   font-family: 'Lato', sans-serif;
     -webkit-font-smoothing: antialiased;
