@@ -111,3 +111,50 @@ h2 {
   padding: 10px;
   color: #fff;
 }
+
+.tracklist li {
+  padding: 0.3rem 0.75rem;
+  font-size: 0.7rem;
+}
+
+.product-page h3 {
+  font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.55;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    width: 100%;
+    margin-top: 2rem;
+}
+.product-page h3.bg {
+  background: #333;
+  color: #fff;
+  padding: 2rem;
+}
+
+.product-page blockquote {
+  display: block;
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: #eee;
+  padding: 1.5em 0 0.5em;
+  margin: 1.5em 0;
+  position: relative;
+  border-bottom: 0;
+}
+.product-page blockquote:before {
+  content: '\201C';
+  position: absolute;
+  top: 0em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 3rem;
+  height: 2rem;
+  font: 6em/1.08em 'PT Sans', sans-serif;
+  color: #666;
+  text-align: center;
+}
