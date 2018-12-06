@@ -1,0 +1,50 @@
+<div id="soon" class="p-5" style="display: none;max-width:600px;">
+    <h3>Bientôt !</h3>
+    <p>Kan ar Bed sera bientôt disponible sur toutes les plateformes de streaming (Spotify, Deezer, Tidal, ...).</p>
+    <p><button data-fancybox-close class="btn btn-primary">Fermer</button></p>
+</div>
+
+<div id="mentions" class="p-5" style="display: none;max-width:600px;font-size:70%;">
+  <h3>Mentions légales</h3>
+  <p>Ce site est édité par l'association Bannoù-heol - 26 ter, chemin de Kervouieg - 29000 Kemper - tél. : +33 6 08 88 57 55.</p>
+  <p>Ce site est hébergé par 1&1 Internet SARL - 7, place de la gare - BP 70109 - 57201 Sarreguemines Cedex - tél. : +33 9 70 80 89 11.</p>
+</div>
+
+<div id="cgv" class="p-5" style="display: none;max-width:600px;font-size:70%;">
+    <h3>Politique de retour - remboursement</h3>
+    <p>Il se peut que vous souhaitiez nous retourner des articles, la loi vous permettant d'exercer un droit de rétractation sous 14 jours suite à un achat. Cependant, tout retour, quel qu’en soit le motif ou la raison est à vos frais, sauf si l'article est arrivé endommagé. Nous ne pouvons malheureusement accepter de rétractation s'agissant des produits tels que les CD et livres lorsque ces articles ont été descellés. Vous serez remboursé intégralement (hors frais d'expédition) dans un délai de 2 jours ouvrés à réception de l'article retourné.</p>
+    <p>Pour toute demande de retour - remboursement, contactez-nous à cette adresse : contact@b-heol.com</p>
+</div>
+
+
+<!--
+<ul class="navbar-nav">
+    {{ $url := .URL | relLangURL }}
+    {{ range .Site.Menus.main }}
+    <li class="nav-item {{ if eq $url (.URL | relLangURL) }}active{{end}}">
+        {{ if eq (hasPrefix .URL "mailto:") true }}
+            <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+        {{ else }}
+            <a class="nav-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+        {{ end }}
+    </li>
+    {{ end }}
+</ul>
+-->
+
+<footer class="sticky-bottom footer text-left pb-0 mb-0">
+    <div class="row align-items-center">
+      <div class="col-md-7">
+        <ul class="list-unstyled">
+          <li><a data-fancybox="mentions" data-src="#mentions" href="javascript:;">Mentions légales</a></li>
+          <li><a data-fancybox="cgv" data-src="#cgv" href="javascript:;">Conditions générales de vente</a></li>
+        </ul>
+      </div>
+      <div class="col-md-5 text-right">
+        <ul class="list-inline social-icons">
+          <li class="list-inline-item pr-3"><a href="https://facebook.com/kanarbed" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
+          <li class="list-inline-item"><a href="https://instagram.com/kanarbed" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
