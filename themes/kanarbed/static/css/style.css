@@ -8,6 +8,10 @@ html {
 body {
   font-family: 'Raleway', serif;
 }
+
+a {
+  color: #000;
+}
 /*
 .container-fluid {
   padding: 0px;
@@ -100,5 +104,10 @@ h2 {
   background: #cda878;
   padding: 10px;
   color: #fff;
-  font-size: 1.5rem;
+}
+
+.offer {
+  background: #aa0000;
+  padding: 10px;
+  color: #fff;
 }
