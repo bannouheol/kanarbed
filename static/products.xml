@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+  <channel>
+    <title>Kan ar Bed</title>
+    <link>https://www.kanarbed.bzh</link>
+    <description>Kan ar Bed, un voyage musical autour du monde. Le livre-CD évènement qui rassemble plus de 100 auteurs, musiciens, chanteurs de Bretagne et d'ailleurs.</description>
+    <item>
+      <g:id>1</g:id>
+      <g:title>Kan ar Bed (Livre + CD)</g:title>
+      <g:description>Liza vit dans les Monts d’Arrée, au coeur de la Bretagne. Une nuit, la jeune fille décide de partir à la découverte du monde. Une invitation au voyage à travers treize morceaux de musique de différents pays, mêlés avec bonheur aux sonorités de la langue bretonne. Plus de cent auteurs, chanteurs et musiciens de Bretagne et d’ailleurs, réunis pour la première fois, nous font partager le plus beau des voyages en musique. Une occasion, pour petits et grands, de partir à la découverte des cultures du monde.
+
+Nombre de pages : 50 + CD
+Dimensions : 24 x 24 cm
+Illustrations : Geoffrey Berniolle
+Histoire : Clara Colin</g:description>
+      <g:price>21.90 EUR</g:price>
+      <g:link>https://www.kanarbed.bzh/product/kan-ar-bed-livre-cd</g:link>
+      <g:image_link>https://www.kanarbed.bzh/img/kan-ar-bed-livre.jpg</g:image_link>
+      <g:additional_image_link>https://www.kanarbed.bzh/img/kan-ar-bed-livre-cd-mockup-4.jpg</g:additional_image_link>
+      <g:additional_image_link>https://www.kanarbed.bzh/img/kan-ar-bed-livre-cd-mockup-5.jpg</g:additional_image_link>
+      <g:mpn>50896696</g:mpn>
+      <g:gtin>9782913652811</g:gtin>
+      <g:shipping>
+        <g:country>FR</g:country>
+        <g:service>Livraison standard</g:service>
+        <g:price>0 EUR</g:price>
+      </g:shipping>
+      <g:condition>new</g:condition>
+      <g:availability>in stock</g:availability>
+      <g:google_product_category>784</g:google_product_category>
+    </item>
+    <item>
+      <g:id>2</g:id>
+      <g:title>Kan ar Bed (CD)</g:title>
+      <g:description>Une invitation au voyage à travers treize morceaux de musiques du monde mêlés avec bonheur aux sonorités de la langue bretonne.
+Plus de cent chanteurs et musiciens de Bretagne et d'ailleurs réunis pour la première fois pour faire partager avec émotion, aux petits et grands, le plus beau des voyages en musique à la découverte des cultures du monde.</g:description>
+      <g:price>12.90 EUR</g:price>
+      <g:link>https://www.kanarbed.bzh/product/kan-ar-bed-cd</g:link>
+      <g:image_link>https://www.kanarbed.bzh/img/kan-ar-bed-cd.jpg</g:image_link>
+      <g:mpn>50897056</g:mpn>
+      <g:gtin>3359340162891</g:gtin>
+      <g:shipping>
+        <g:country>FR</g:country>
+        <g:service>Livraison standard</g:service>
+        <g:price>0 EUR</g:price>
+      </g:shipping>
+      <g:condition>new</g:condition>
+      <g:availability>in stock</g:availability>
+      <g:google_product_category>855</g:google_product_category>
+    </item>
+  </channel>
+</rss>
