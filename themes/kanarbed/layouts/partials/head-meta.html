@@ -3,4 +3,5 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 {{ template "_internal/opengraph.html" . }}
+<meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.og_image | relURL }}"/>
 {{ template "_internal/twitter_cards.html" . }}

@@ -19,6 +19,13 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 # Google analytics
 googleAnalytics = "UA-126206970-1"
 
+# OpenGraph
+[params]
+  title = "Kan ar Bed, Un Voyage Musical Autour du Monde - CD & livre-CD événement"
+  description = "Un voyage musical traversant Tahiti, la Chine, l’Afrique du Sud, l’Argentine, l’Angleterre, la Corse, l'Espagne, … chanté en breton ? Voici Kan ar Bed, l’album novateur en Bretagne à découvrir absolument."
+  images = ["/img/kan-ar-bed-livre-cd-mockup-2.jpg", "/img/kan-ar-bed-livre-cd-mockup-4.jpg", "/img/kan-ar-bed-livre-cd-mockup-5.jpg"]
+  og_image = "/img/kan-ar-bed-livre-cd-mockup-2.jpg"
+
 [languages.fr]
   languageName = "Français"
 
