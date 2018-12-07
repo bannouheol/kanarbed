@@ -1,5 +1,6 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="ZmE1YjMzMjAtYWY5Yi00NTIyLWIzMTItNTY1ZmY1ZGY2NTRmNjM2Nzk1NjMxMDkwODI2NjQz"></script>
+<!--TEST--<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="NjQ3YWRhNWMtOTc3NC00YzgyLWIwMmItMjliYzliMzIxYmQ5NjM2Nzk1NjMxMDkwODI2NjQz"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
@@ -15,11 +16,7 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KJBRDV"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-
 <script>
-Snipcart.subscribe('item.adding', function (ev, item, items) {
-    // You can call preventDefault method in event object if you don't want to add
-    // the item to the cart.
-  fbq('track', 'AddToCart');
-});
+Snipcart.subscribe('item.added', function (ev, item, items) {fbq('track', 'AddToCart');});
+Snipcart.subscribe('order.completed', function (ev, item, items) {fbq('track', 'Purchase');});
 </script>
