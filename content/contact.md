@@ -2,4 +2,5 @@
 title: "Contact"
 ---
 
-Contact us!
+Contactez-nous!
+contact@kanarbed.bzh
