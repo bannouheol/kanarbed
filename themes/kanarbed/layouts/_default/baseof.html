@@ -5,6 +5,11 @@
 
     <link rel="canonical" href="{{ .Permalink }}">
 
+    {{ if isset .Params "price" }}
+      <meta property="product:price:amount" content="{{ .Params.price }}" />
+      <meta property="product:price:currency" content="EUR" />
+    {{ end}}
+
     <title>
       {{ block "title" . }}
         {{ .Title}}{{ if ne .Title .Site.Title }} | {{ .Site.Title }}{{ end }}
