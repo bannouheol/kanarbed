@@ -19,4 +19,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>
 Snipcart.subscribe('item.added', function (ev, item, items) {fbq('track', 'AddToCart');});
 Snipcart.subscribe('order.completed', function (ev, item, items) {fbq('track', 'Purchase');});
+
+$(document).ready(function() {
+    $('#qty').change(function() {
+      $('#addToCart').data('item-quantity', $(this).val());
+    });
+});
 </script>
