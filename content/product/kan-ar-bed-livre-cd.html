@@ -3,7 +3,7 @@ title: "Kan ar Bed - Livre-CD"
 price: 21.90
 ---
 
-<div class="product-page container mt-3 mb-5">
+<div class="product-page container mt-3 mb-5" itemscope itemtype="http://schema.org/Book">
   <div class="row d-flex justify-content-between">
     <div class="col-md-6" style="border:7px solid #fefefe;box-shadow: 0 10px 20px rgba(0,0,0,0.30), 0 6px 6px rgba(0,0,0,0.10);">
       <img src="/img/kan-ar-bed-livre.jpg" class="img-fluid pt-3">
@@ -57,12 +57,16 @@ price: 21.90
       <blockquote>Une histoire magique parfaitement illustrée, accompagnez Liza à bord de son dirigeable à travers le monde.</blockquote>
       <h3>Informations supplémentaires</h3>
         <ul class="list-group">
-            <li class="list-group-item">Nombre de pages : 50 + CD</li>
+            <li class="list-group-item">Nombre de pages : <span itemprop="numberOfPages">50</span> + CD</li>
             <li class="list-group-item">Dimensions : 24 x 24 cm</li>
-            <li class="list-group-item">Illustrations : Geoffrey Berniolle </li>
-            <li class="list-group-item">Histoire : Clara Colin </li>
+            <li class="list-group-item">Illustrations : <span itemprop="illustrator">Geoffrey Berniolle</span></li>
+            <li class="list-group-item" itemprop="author" itemscope itemtype="http://schema.org/Person">Histoire : <span itemprop="name">Clara Colin</span></li>
             <li class="list-group-item">Auteurs : Malo Bouëssel du Bourg, Perynn Bleunven, Charlez an Dreo, Annaig Kervella, Annie Coz, Gwenvred Latimier, Jil Penneg, Fulup Jakez, Goulwena an Henaff, Mark Kerrain, Skolajidi Diwan ar Releg, Youenn Gwernig, Gwenn-Ael ar C’helleg</li>
-            <li class="list-group-item">ISBN : 9782913652811</li>
+            <li class="list-group-item">ISBN : <span itemprop="isbn">978-2-913652-81-1</span></li>
+            <li class="list-group-item" itemscope itemtype="http://schema.org/Organization">Editeur : <span itemprop="bookEdition">Bannoù-heol</span></li>
+            <meta itemprop="datePublished" content="2018-11-16">
+            <link itemprop="url" href="https://kanarbed.bzh/product/kan-ar-bed-livre-cd" rel="author"/>
+            <link itemprop="bookFormat" href="http://schema.org/Hardcover">
         </ul>
     </div>
   </div>
@@ -74,4 +78,4 @@ price: 21.90
     </div>
   </div>
 
-</div>
+</div> <!--.product-page -->
