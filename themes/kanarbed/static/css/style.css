@@ -12,6 +12,9 @@ body {
 a {
   color: #000;
 }
+a:hover {
+  color: #f0f0f0;
+}
 /*
 .container-fluid {
   padding: 0px;
@@ -102,6 +105,7 @@ h2 {
 .price {
   /*background: rgba(22, 43, 65, 0.6);*/
   background: #cda878;
+  /*background: #cab17a;*/
   padding: 10px;
   color: #fff;
 }
