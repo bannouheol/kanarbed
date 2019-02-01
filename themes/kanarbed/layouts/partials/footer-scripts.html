@@ -1,18 +1,38 @@
-<script src="/js/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="ZmE1YjMzMjAtYWY5Yi00NTIyLWIzMTItNTY1ZmY1ZGY2NTRmNjM2Nzk1NjMxMDkwODI2NjQz"></script>
-<script src="/js/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script
+  src="/js/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.snipcart.com/scripts/2.0/snipcart.js"
+  id="snipcart"
+  data-api-key="ZmE1YjMzMjAtYWY5Yi00NTIyLWIzMTItNTY1ZmY1ZGY2NTRmNjM2Nzk1NjMxMDkwODI2NjQz"
+></script>
+<script
+  src="/js/popper.min.js"
+  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"
+></script>
+<script
+  src="/js/bootstrap.min.js"
+  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+  crossorigin="anonymous"
+></script>
 <script src="/js/jquery.fancybox.min.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126206970-1"></script>
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=UA-126206970-1"
+></script>
 <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-126206970-1');
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+  gtag("config", "UA-126206970-1");
 </script>
 <!-- Google Tag Manager (noscript) -->
-
 
 <!-- Mailchimp 
 <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/90e4aace4b7ca53823cfca0b4/4a63386582aea273100ea6b3d.js");</script>
@@ -20,172 +40,189 @@
 
 <!--Fullstory-->
 <script>
-window['_fs_debug'] = false;
-window['_fs_host'] = 'fullstory.com';
-window['_fs_org'] = 'H3HMQ';
-window['_fs_namespace'] = 'FS';
-(function(m,n,e,t,l,o,g,y){
-    if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
-    g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
-    o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
-    y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
-    g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
-    g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
-    g.consent=function(a){g("consent",!arguments.length||a)};
-    g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
-    g.clearUserCookie=function(){};
-})(window,document,window['_fs_namespace'],'script','user');
+  window["_fs_debug"] = false;
+  window["_fs_host"] = "fullstory.com";
+  window["_fs_org"] = "H3HMQ";
+  window["_fs_namespace"] = "FS";
+  (function(m, n, e, t, l, o, g, y) {
+    if (e in m) {
+      if (m.console && m.console.log) {
+        m.console.log(
+          'FullStory namespace conflict. Please set window["_fs_namespace"].'
+        );
+      }
+      return;
+    }
+    g = m[e] = function(a, b, s) {
+      g.q ? g.q.push([a, b, s]) : g._api(a, b, s);
+    };
+    g.q = [];
+    o = n.createElement(t);
+    o.async = 1;
+    o.src = "https://" + _fs_host + "/s/fs.js";
+    y = n.getElementsByTagName(t)[0];
+    y.parentNode.insertBefore(o, y);
+    g.identify = function(i, v, s) {
+      g(l, { uid: i }, s);
+      if (v) g(l, v, s);
+    };
+    g.setUserVars = function(v, s) {
+      g(l, v, s);
+    };
+    g.event = function(i, v, s) {
+      g("event", { n: i, p: v }, s);
+    };
+    g.shutdown = function() {
+      g("rec", !1);
+    };
+    g.restart = function() {
+      g("rec", !0);
+    };
+    g.consent = function(a) {
+      g("consent", !arguments.length || a);
+    };
+    g.identifyAccount = function(i, v) {
+      o = "account";
+      v = v || {};
+      v.acctId = i;
+      g(o, v);
+    };
+    g.clearUserCookie = function() {};
+  })(window, document, window["_fs_namespace"], "script", "user");
 </script>
 <!--Fullstory-->
 
 <script>
-/*Snipcart.subscribe('item.added', function (ev, item, items) {});
+  /*Snipcart.subscribe('item.added', function (ev, item, items) {});
 Snipcart.subscribe('order.completed', function (ev, item, items) {});*/
-$(document).ready(function() {
-    $('#qty').change(function() {
-        $('#addToCart').data('item-quantity', $(this).val());
+  $(document).ready(function() {
+    $("#qty").change(function() {
+      $("#addToCart").data("item-quantity", $(this).val());
     });
-});
+  });
 
-//Making sure Snipcart is ready
-document.addEventListener('snipcart.ready', function() {
+  //Making sure Snipcart is ready
+  document.addEventListener("snipcart.ready", function() {
+    Snipcart.api.configure("split_firstname_and_lastname", true);
     //Subscribing to different events
-    Snipcart.subscribe('item.added', function(item) {
-        itemAdded(item);
+    Snipcart.subscribe("item.added", function(item) {
+      itemAdded(item);
     });
-    Snipcart.subscribe('item.removed', function(item) {
-        itemRemoved(item);
+    Snipcart.subscribe("item.removed", function(item) {
+      itemRemoved(item);
     });
-    Snipcart.subscribe('order.completed', function(order) {
-        orderCompleted(order);
+    Snipcart.subscribe("order.completed", function(order) {
+      orderCompleted(order);
     });
-    Snipcart.subscribe('cart.opened', function() {
-        cartOpened();
+    Snipcart.subscribe("cart.opened", function() {
+      cartOpened();
     });
-    Snipcart.subscribe('cart.closed', function() {
-        cartClosed();
+    Snipcart.subscribe("cart.closed", function() {
+      cartClosed();
     });
-    Snipcart.subscribe('page.change', function(page) {
-        pageChanged(page);
+    Snipcart.subscribe("page.change", function(page) {
+      pageChanged(page);
     });
-});
-function itemAdded(item){
-    fbq('track', 'AddToCart');
+  });
+  function itemAdded(item) {
+    fbq("track", "AddToCart");
     dataLayer.push({
-        event: 'snipcartEvent',
-        eventCategory: 'Cart Update',
-        eventAction: 'New Item Added To Cart',
-        eventLabel: item.name,
-        eventValue: item.price,
-        ecommerce: {
-            currencyCode: 'EUR',
-            add: {
-                products: createProductsFromItems([item])
-            }
+      event: "snipcartEvent",
+      eventCategory: "Cart Update",
+      eventAction: "New Item Added To Cart",
+      eventLabel: item.name,
+      eventValue: item.price,
+      ecommerce: {
+        currencyCode: "EUR",
+        add: {
+          products: createProductsFromItems([item])
         }
+      }
     });
-}
-function itemRemoved(item){
+  }
+  function itemRemoved(item) {
     dataLayer.push({
-        event: 'snipcartEvent',
-        eventCategory: 'Cart Update',
-        eventAction: 'Item Removed From Cart',
-        eventLabel: item.name,
-        eventValue: item.price,
-        ecommerce: {
-            currencyCode: 'EUR',
-            remove: {
-                products: createProductsFromItems([item])
-            }
+      event: "snipcartEvent",
+      eventCategory: "Cart Update",
+      eventAction: "Item Removed From Cart",
+      eventLabel: item.name,
+      eventValue: item.price,
+      ecommerce: {
+        currencyCode: "EUR",
+        remove: {
+          products: createProductsFromItems([item])
         }
+      }
     });
-}
-function orderCompleted(order){
-    fbq('track', 'Purchase');
+  }
+  function orderCompleted(order) {
+    fbq("track", "Purchase");
     dataLayer.push({
-        event: 'snipcartEvent',
-        eventCategory: 'Order Update',
-        eventAction: 'New Order Completed',
-        ecommerce: {
-            currencyCode: order.currency,
-            purchase: {
-                actionField: {
-                    id: order.token,
-                    affiliation: 'Website',
-                    revenue: order.total,
-                    tax: order.taxesTotal,
-                    shipping: order.shippingInformation.fees,
-                    invoiceNumber: order.invoiceNumber
-                },
-                products: createProductsFromItems(order.items),
-                userId: order.user.id
-            }
+      event: "snipcartEvent",
+      eventCategory: "Order Update",
+      eventAction: "New Order Completed",
+      ecommerce: {
+        currencyCode: order.currency,
+        purchase: {
+          actionField: {
+            id: order.token,
+            affiliation: "Website",
+            revenue: order.total,
+            tax: order.taxesTotal,
+            shipping: order.shippingInformation.fees,
+            invoiceNumber: order.invoiceNumber
+          },
+          products: createProductsFromItems(order.items),
+          userId: order.user.id
         }
+      }
     });
-}
-function cartOpened(){
+  }
+  function cartOpened() {
     dataLayer.push({
-        event: 'snipcartEvent',
-        eventCategory: 'Cart Action',
-        eventAction: 'Cart Opened',
-        ecommerce: {
-            cartopen: {
-                products: createProductsFromItems(Snipcart.api.items.all())
-            }
+      event: "snipcartEvent",
+      eventCategory: "Cart Action",
+      eventAction: "Cart Opened",
+      ecommerce: {
+        cartopen: {
+          products: createProductsFromItems(Snipcart.api.items.all())
         }
+      }
     });
-}
-function cartClosed(){
+  }
+  function cartClosed() {
     dataLayer.push({
-        event: 'snipcartEvent',
-        eventCategory: 'Cart Action',
-        eventAction: 'Cart Closed',
-        ecommerce: {
-            cartclose: {
-                products: createProductsFromItems(Snipcart.api.items.all())
-            }
+      event: "snipcartEvent",
+      eventCategory: "Cart Action",
+      eventAction: "Cart Closed",
+      ecommerce: {
+        cartclose: {
+          products: createProductsFromItems(Snipcart.api.items.all())
         }
+      }
     });
-}
-function pageChanged(page){
+  }
+  function pageChanged(page) {
     dataLayer.push({
-        event: 'snipcartEvent',
-        eventCategory: 'Page Change',
-        eventAction: page,
-        ecommerce: {
-            checkout: {
-                products: createProductsFromItems(Snipcart.api.items.all())
-            }
+      event: "snipcartEvent",
+      eventCategory: "Page Change",
+      eventAction: page,
+      ecommerce: {
+        checkout: {
+          products: createProductsFromItems(Snipcart.api.items.all())
         }
+      }
     });
-}
-function createProductsFromItems (items) {
-    return items.map(function (item) {
-        return {
-            name: item.name,
-            description: item.description,
-            id: item.id,
-            price: item.price,
-            quantity: item.quantity
-        };
+  }
+  function createProductsFromItems(items) {
+    return items.map(function(item) {
+      return {
+        name: item.name,
+        description: item.description,
+        id: item.id,
+        price: item.price,
+        quantity: item.quantity
+      };
     });
-}
+  }
 </script>
-
-<!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<!-- Your customer chat code -->
-<div class="fb-customerchat"
-  attribution=setup_tool
-  page_id="2162289417326288"
-  logged_in_greeting="Bonjour ! Avez-vous une question ?"
-  logged_out_greeting="Bonjour ! Avez-vous une question ?">
-</div>
