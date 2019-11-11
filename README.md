@@ -1,5 +1,5 @@
 # kanarbed
 
-https://www.kanarbed.fr
+https://kanarbed.fr
 
 Hugo + Snipcart

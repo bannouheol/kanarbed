@@ -1,4 +1,4 @@
 # Redirect default Netlify subdomain to primary domain
-https://kanarbed.netlify.com/* https://www.kanarbed.fr/:splat 301!
-https://kanarbed.bzh/* https://www.kanarbed.fr/:splat 301!
-https://www.kanarbed.bzh/* https://www.kanarbed.fr/:splat 301!
+https://kanarbed.netlify.com/* https://kanarbed.fr/:splat 301!
+https://kanarbed.bzh/* https://kanarbed.fr/:splat 301!
+https://www.kanarbed.bzh/* https://kanarbed.fr/:splat 301!

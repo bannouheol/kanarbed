@@ -18,11 +18,11 @@
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="/css/bootstrap.min.css"
+      href="{{ .Site.BaseURL }}/css/bootstrap.min.css"
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-    <link href="/css/style.css" rel="stylesheet" />
+    <link href="{{ .Site.BaseURL }}/css/style.css" rel="stylesheet" />
 
     {{ if .RSSLink }}
     <link
