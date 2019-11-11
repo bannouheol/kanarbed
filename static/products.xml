@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
   <channel>
     <title>Kan ar Bed</title>
-    <link>https://www.kanarbed.bzh</link>
+    <link>https://www.kanarbed.fr</link>
     <description>Kan ar Bed, un voyage musical autour du monde. Le livre-CD évènement qui rassemble plus de 100 auteurs, musiciens, chanteurs de Bretagne et d'ailleurs.</description>
     <item>
       <g:id>1</g:id>
@@ -14,10 +14,10 @@ Dimensions : 24 x 24 cm
 Illustrations : Geoffrey Berniolle
 Histoire : Clara Colin</g:description>
       <g:price>21.90 EUR</g:price>
-      <g:link>https://www.kanarbed.bzh/product/kan-ar-bed-livre-cd</g:link>
-      <g:image_link>https://www.kanarbed.bzh/img/cover_kanarbed_2018_v4_front_cd_rgb.jpg</g:image_link>
-      <g:additional_image_link>https://www.kanarbed.bzh/img/kan-ar-bed-livre-cd-mockup-4@1400.jpg</g:additional_image_link>
-      <g:additional_image_link>https://www.kanarbed.bzh/img/kan-ar-bed-livre-cd-mockup-5@1400.jpg</g:additional_image_link>
+      <g:link>https://www.kanarbed.fr/product/kan-ar-bed-livre-cd</g:link>
+      <g:image_link>https://www.kanarbed.fr/img/cover_kanarbed_2018_v4_front_cd_rgb.jpg</g:image_link>
+      <g:additional_image_link>https://www.kanarbed.fr/img/kan-ar-bed-livre-cd-mockup-4@1400.jpg</g:additional_image_link>
+      <g:additional_image_link>https://www.kanarbed.fr/img/kan-ar-bed-livre-cd-mockup-5@1400.jpg</g:additional_image_link>
       <g:mpn>50896696</g:mpn>
       <g:gtin>9782913652811</g:gtin>
       <g:shipping>
@@ -35,8 +35,8 @@ Histoire : Clara Colin</g:description>
       <g:description>Une invitation au voyage à travers treize morceaux de musiques du monde mêlés avec bonheur aux sonorités de la langue bretonne.
 Plus de cent chanteurs et musiciens de Bretagne et d'ailleurs réunis pour la première fois pour faire partager avec émotion, aux petits et grands, le plus beau des voyages en musique à la découverte des cultures du monde.</g:description>
       <g:price>12.90 EUR</g:price>
-      <g:link>https://www.kanarbed.bzh/product/kan-ar-bed-cd</g:link>
-      <g:image_link>https://www.kanarbed.bzh/img/kan-ar-bed-cd@2250_SQUARE.jpg</g:image_link>
+      <g:link>https://www.kanarbed.fr/product/kan-ar-bed-cd</g:link>
+      <g:image_link>https://www.kanarbed.fr/img/kan-ar-bed-cd@2250_SQUARE.jpg</g:image_link>
       <g:mpn>50897056</g:mpn>
       <g:gtin>3359340162891</g:gtin>
       <g:shipping>
