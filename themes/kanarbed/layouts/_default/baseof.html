@@ -1,51 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ .Lang }}">
   <head>
     {{ partial "head-meta" . }}
 
-    <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="canonical" href="{{ .Permalink }}" />
 
     {{ if isset .Params "price" }}
-      <meta property="product:price:amount" content="{{ .Params.price }}" />
-      <meta property="product:price:currency" content="EUR" />
+    <meta property="product:price:amount" content="{{ .Params.price }}" />
+    <meta property="product:price:currency" content="EUR" />
     {{ end}}
 
     <title>
-      {{ block "title" . }}
-        {{ .Title}}{{ if ne .Title .Site.Title }} | {{ .Site.Title }}{{ end }}
-      {{ end }}
+      {{ block "title" . }} {{ .Title}}{{ if ne .Title .Site.Title }} | {{
+      .Site.Title }}{{ end }} {{ end }}
     </title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="{{ .Site.BaseURL }}/css/style.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link href="/css/style.css" rel="stylesheet" />
 
     {{ if .RSSLink }}
-    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-    {{ end }}
-
-    {{ template "_internal/google_analytics.html" . }}
-
-    {{ partial "head-custom.html" . }}
+    <link
+      href="{{ .RSSLink }}"
+      rel="alternate"
+      type="application/rss+xml"
+      title="{{ .Site.Title }}"
+    />
+    {{ end }} {{ template "_internal/google_analytics.html" . }} {{ partial
+    "head-custom.html" . }}
   </head>
   <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KJBRDV"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-    {{ block "header" . }}
-      {{ partial "header" . }}
-    {{ end }}
-
-    {{ block "body" . }}
-      {{ block "main" . }}
-      {{ end }}
-    {{ end }}
-
-    {{ block "footer" . }}
-      {{ partial "footer" . }}
-    {{ end }}
-
-    {{ partial "footer-scripts" . }}
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5KJBRDV"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    {{ block "header" . }} {{ partial "header" . }} {{ end }} {{ block "body" .
+    }} {{ block "main" . }} {{ end }} {{ end }} {{ block "footer" . }} {{
+    partial "footer" . }} {{ end }} {{ partial "footer-scripts" . }}
   </body>
 </html>
