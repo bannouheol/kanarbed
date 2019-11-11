@@ -1,4 +1,4 @@
-<script
+<!--<script
   src="/js/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"
@@ -7,23 +7,17 @@
   src="https://cdn.snipcart.com/scripts/2.0/snipcart.js"
   id="snipcart"
   data-api-key="ZmE1YjMzMjAtYWY5Yi00NTIyLWIzMTItNTY1ZmY1ZGY2NTRmNjM2Nzk1NjMxMDkwODI2NjQz"
-></script>
-<script
-  src="/js/popper.min.js"
-  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-  crossorigin="anonymous"
-></script>
-<script
-  src="/js/bootstrap.min.js"
-  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-  crossorigin="anonymous"
-></script>
+></script>-->
+<div hidden id="snipcart" data-api-key="ZmE1YjMzMjAtYWY5Yi00NTIyLWIzMTItNTY1ZmY1ZGY2NTRmNjM2Nzk1NjMxMDkwODI2NjQz"></div>
+<script src="https://cdn.snipcart.com/themes/v3.0.2/default/snipcart.js"></script>
+
+<script src="/js/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"></script>
+<script src="/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+  crossorigin="anonymous"></script>
 <script src="/js/jquery.fancybox.min.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script
-  async
-  src="https://www.googletagmanager.com/gtag/js?id=UA-126206970-1"
-></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126206970-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag() {
@@ -44,7 +38,7 @@
   window["_fs_host"] = "fullstory.com";
   window["_fs_org"] = "H3HMQ";
   window["_fs_namespace"] = "FS";
-  (function(m, n, e, t, l, o, g, y) {
+  (function (m, n, e, t, l, o, g, y) {
     if (e in m) {
       if (m.console && m.console.log) {
         m.console.log(
@@ -53,7 +47,7 @@
       }
       return;
     }
-    g = m[e] = function(a, b, s) {
+    g = m[e] = function (a, b, s) {
       g.q ? g.q.push([a, b, s]) : g._api(a, b, s);
     };
     g.q = [];
@@ -62,32 +56,32 @@
     o.src = "https://" + _fs_host + "/s/fs.js";
     y = n.getElementsByTagName(t)[0];
     y.parentNode.insertBefore(o, y);
-    g.identify = function(i, v, s) {
+    g.identify = function (i, v, s) {
       g(l, { uid: i }, s);
       if (v) g(l, v, s);
     };
-    g.setUserVars = function(v, s) {
+    g.setUserVars = function (v, s) {
       g(l, v, s);
     };
-    g.event = function(i, v, s) {
+    g.event = function (i, v, s) {
       g("event", { n: i, p: v }, s);
     };
-    g.shutdown = function() {
+    g.shutdown = function () {
       g("rec", !1);
     };
-    g.restart = function() {
+    g.restart = function () {
       g("rec", !0);
     };
-    g.consent = function(a) {
+    g.consent = function (a) {
       g("consent", !arguments.length || a);
     };
-    g.identifyAccount = function(i, v) {
+    g.identifyAccount = function (i, v) {
       o = "account";
       v = v || {};
       v.acctId = i;
       g(o, v);
     };
-    g.clearUserCookie = function() {};
+    g.clearUserCookie = function () { };
   })(window, document, window["_fs_namespace"], "script", "user");
 </script>
 <!--Fullstory-->
@@ -95,32 +89,32 @@
 <script>
   /*Snipcart.subscribe('item.added', function (ev, item, items) {});
 Snipcart.subscribe('order.completed', function (ev, item, items) {});*/
-  $(document).ready(function() {
-    $("#qty").change(function() {
+  $(document).ready(function () {
+    $("#qty").change(function () {
       $("#addToCart").data("item-quantity", $(this).val());
     });
   });
 
   //Making sure Snipcart is ready
-  document.addEventListener("snipcart.ready", function() {
+  document.addEventListener("snipcart.ready", function () {
     Snipcart.api.configure("split_firstname_and_lastname", true);
     //Subscribing to different events
-    Snipcart.subscribe("item.added", function(item) {
+    Snipcart.subscribe("item.added", function (item) {
       itemAdded(item);
     });
-    Snipcart.subscribe("item.removed", function(item) {
+    Snipcart.subscribe("item.removed", function (item) {
       itemRemoved(item);
     });
-    Snipcart.subscribe("order.completed", function(order) {
+    Snipcart.subscribe("order.completed", function (order) {
       orderCompleted(order);
     });
-    Snipcart.subscribe("cart.opened", function() {
+    Snipcart.subscribe("cart.opened", function () {
       cartOpened();
     });
-    Snipcart.subscribe("cart.closed", function() {
+    Snipcart.subscribe("cart.closed", function () {
       cartClosed();
     });
-    Snipcart.subscribe("page.change", function(page) {
+    Snipcart.subscribe("page.change", function (page) {
       pageChanged(page);
     });
   });
@@ -215,7 +209,7 @@ Snipcart.subscribe('order.completed', function (ev, item, items) {});*/
     });
   }
   function createProductsFromItems(items) {
-    return items.map(function(item) {
+    return items.map(function (item) {
       return {
         name: item.name,
         description: item.description,
