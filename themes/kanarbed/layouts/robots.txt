@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://kanarbed.fr/sitemap.xml
+Sitemap: https://kanarbed.bzh/sitemap.xml

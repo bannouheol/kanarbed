@@ -2,5 +2,5 @@
 title: "Contact"
 ---
 
-Contactez-nous!
-contact@kanarbed.fr
+Contactez-nous !
+contact@kanarbed.bzh
