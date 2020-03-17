@@ -1,5 +1,9 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <!--<script src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>-->
 
@@ -13,10 +17,6 @@
 <!--<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js"
   data-api-key="ZmE1YjMzMjAtYWY5Yi00NTIyLWIzMTItNTY1ZmY1ZGY2NTRmNjM2Nzk1NjMxMDkwODI2NjQz" id="snipcart"></script>-->
 
-<script src="/js/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-  crossorigin="anonymous"></script>
-<script src="/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-  crossorigin="anonymous"></script>
 <script src="/js/jquery.fancybox.min.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126206970-1"></script>
@@ -33,60 +33,6 @@
 <!-- Mailchimp 
 <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/90e4aace4b7ca53823cfca0b4/4a63386582aea273100ea6b3d.js");</script>
 -->
-
-<!--Fullstory-->
-<script>
-  window["_fs_debug"] = false;
-  window["_fs_host"] = "fullstory.com";
-  window["_fs_org"] = "H3HMQ";
-  window["_fs_namespace"] = "FS";
-  (function (m, n, e, t, l, o, g, y) {
-    if (e in m) {
-      if (m.console && m.console.log) {
-        m.console.log(
-          'FullStory namespace conflict. Please set window["_fs_namespace"].'
-        );
-      }
-      return;
-    }
-    g = m[e] = function (a, b, s) {
-      g.q ? g.q.push([a, b, s]) : g._api(a, b, s);
-    };
-    g.q = [];
-    o = n.createElement(t);
-    o.async = 1;
-    o.src = "https://" + _fs_host + "/s/fs.js";
-    y = n.getElementsByTagName(t)[0];
-    y.parentNode.insertBefore(o, y);
-    g.identify = function (i, v, s) {
-      g(l, { uid: i }, s);
-      if (v) g(l, v, s);
-    };
-    g.setUserVars = function (v, s) {
-      g(l, v, s);
-    };
-    g.event = function (i, v, s) {
-      g("event", { n: i, p: v }, s);
-    };
-    g.shutdown = function () {
-      g("rec", !1);
-    };
-    g.restart = function () {
-      g("rec", !0);
-    };
-    g.consent = function (a) {
-      g("consent", !arguments.length || a);
-    };
-    g.identifyAccount = function (i, v) {
-      o = "account";
-      v = v || {};
-      v.acctId = i;
-      g(o, v);
-    };
-    g.clearUserCookie = function () { };
-  })(window, document, window["_fs_namespace"], "script", "user");
-</script>
-<!--Fullstory-->
 
 <script>
   /*Snipcart.subscribe('item.added', function (ev, item, items) {});
